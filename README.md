@@ -1,12 +1,12 @@
 <h1 align="center">
-🌐 Job Application Tracker
+🌐 RentHouse Application
 </h1>
 <p align="center">
 MongoDB, Expressjs, React, Nodejs
 </p>
 
 <p align="center">
-   <a href="https://github.com/wirthdrewneu/AppTrack.git">
+   <a href="https://github.com/harmanwho/WebDev4.git">
       Source Code
    </a>
 </p>
@@ -17,7 +17,7 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
 
 ## clone or download
 ```terminal
-$ git clone https://github.com/wirthdrewneu/AppTrack.git
+$ git clone https://github.com/harmanwho/WebDev4.git
 $ npm i
 ```
 
@@ -58,12 +58,8 @@ $ npm run start // this will run the files in docs, this behavior is exactly the
 
 run the script at the first level:
 
-(You need to add a JWT_SECRET in .env to connect to MongoDB)
+(You need to add a MONGO_USER, MONGO_PASSWORD, MONGO_URI in .env to connect to MongoDB)
 
-```terminal
-// in the root level
-$ echo "JWT_SECRET=YOUR_JWT_SECRET" >> ./server/src/.env
-``` -->
 
 ### Start
 
@@ -114,8 +110,8 @@ Build a Web application using  MongoDB, Express, Node
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 
-## Authors
-[Andrew Wirth](https://github.com/wirthdrewneu) | [Harman Sidhu](https://github.com/harmanwho) 
+## Author
+[Harman Sidhu](https://github.com/harmanwho) 
 
 ### License
 [MIT]()
