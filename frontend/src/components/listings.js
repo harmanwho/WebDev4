@@ -14,7 +14,6 @@ function Listings() {
     const [currentPage, setCurrentPage] = useState(1);
     const [posts, setPosts] = useState(paginate(allData, currentPage, pageSize));
     const [currentSort, setCurrentSort] = useState("default");
-    // const [dataUrl, setDataUrl] = useState("/getListings");
 
     const sortStyle = {
         color: COLORS.loafer
@@ -31,8 +30,6 @@ function Listings() {
         .then(res => res.json());
         setTotal(_total);
     }
-
-    
     
     useEffect(() => {
         fetchData("/getListings");
@@ -60,8 +57,8 @@ function Listings() {
         <>
             <div className="container listings p-0 mt-4">
                 <h1 className="main-heading text-center pb-2">Find Your Perfect Home out of <span className="listing-about">{total}</span> homes</h1>
-
                 <h5 className="main-heading text-center pb-2">
+                    <hr className="mt-0"/>
                     <span className="listing-about">Sort By: </span>
                     <a 
                         className={(currentSort === "default") ? "sort-link ml-2 sort-active" : "sort-link ml-2"}
@@ -84,7 +81,8 @@ function Listings() {
                         Price High to Low
                     </a>
                 </h5>
-                {/* card div */}
+                
+
                 {posts.map (listing => 
                     <div className="col-6 p-2 d-inline-block" key={posts.indexOf(listing)}>
                         <Card element={listing} />

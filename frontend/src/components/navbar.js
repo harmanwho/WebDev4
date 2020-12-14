@@ -9,7 +9,7 @@ function NavBar({user}) {
         color: COLORS.catalineblue
     }
 	return (
-		<nav className="navbar navbar-light bg-light shadow">
+		<nav className="navbar navbar-light bg-loafer shadow">
             <a className="ml-2" href="/home" style={navBrandStyle}>
                 <h5 className="d-inline">
                     RentHouse

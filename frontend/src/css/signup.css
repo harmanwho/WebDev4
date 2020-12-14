@@ -1,0 +1,46 @@
+.form-container {
+    height: 94vh;
+}
+
+.form-area {
+    height: auto;
+    padding: 3rem;
+    width: 50%;
+    margin: auto;
+    background-color: #EDF5E1;
+}
+
+.form-area input {
+    padding: 2px 5px;
+    border: 1px solid #379683;
+    background-color: #EDF5E1 !important;
+}
+
+.form-area label {
+    padding: 2px 5px;
+}
+
+.form-about {
+    color: #EDF5E1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.error-field {
+    color: red;
+}
+
+.form-link {
+    text-decoration: underline;
+    color: #379683 !important;
+    cursor: pointer;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}

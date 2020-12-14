@@ -2,7 +2,7 @@
     background-clip: border-box !important; 
     border: 0 solid #EDF5E1 !important;
     border-radius: 0 !important;
-    background-color: #EDF5E1;
+    background-color: #EDF5E1 !important;
 }
 
 .card-header {

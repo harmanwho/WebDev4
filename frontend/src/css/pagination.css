@@ -3,6 +3,10 @@
     padding-left: 24% !important;
 }
 
+.page-link {
+    background-color: #EDF5E1 !important;
+}
+
 .page-item:first-child .page-link {
     margin-left: 0;
     border-top-left-radius: 0 !important;

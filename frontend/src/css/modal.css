@@ -9,7 +9,7 @@ body.modal-open {
 }
 
 .modal-content {
-    background-color: #EDF5E1;
+    background-color: #EDF5E1 !important;
     background-clip: padding-box;
     border: 1px solid #05386B;
     border-radius: 0 !important;
