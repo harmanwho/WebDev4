@@ -1,0 +1,8 @@
+body {
+    height: 100vh;
+    background-color: #EDF5E1;
+    background-image: linear-gradient(#379683, #05386B);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

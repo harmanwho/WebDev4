@@ -1,0 +1,21 @@
+.carousel-img {
+    width: auto !important;
+    height: 300px !important;
+    margin: auto;
+}
+
+.carousel-modal-img {
+    width: auto !important;
+    height: 600px !important;
+    margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #379683;
+    opacity: 0.3;
+}
+
+.heading {
+    color: #EDF5E1;
+    font-weight: 400;
+}

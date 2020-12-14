@@ -1,0 +1,13 @@
+.navbar {
+    border-bottom: 1px solid #379683;
+}
+
+
+.bg-light {
+    background-color: #EDF5E1 !important;
+    opacity: 3;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline;
+}

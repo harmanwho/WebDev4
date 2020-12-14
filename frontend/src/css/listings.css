@@ -1,0 +1,30 @@
+.listings {
+    background-color: transparent;
+}
+
+.listing-about {
+    color: #EDF5E1;
+}
+
+.sort-link {
+    cursor: pointer;
+}
+
+.sort-link:hover {
+    text-decoration: underline;
+}
+
+.sort-active {
+    text-decoration: underline;
+    color: #05386B !important;
+}
+/* 
+.paginate div nav {
+    /* margin: auto; */
+    /* margin-right: 19%; */
+/* }
+
+.pagination {
+    width: auto; */
+    /* float:right; */
+/* } */

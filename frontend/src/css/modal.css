@@ -1,0 +1,27 @@
+body.modal-open {
+    color: #05386B;
+    font-family: 'Arvo', serif;
+    background-color: #EDF5E1;
+    background-image: linear-gradient(#379683, #05386B);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-content {
+    background-color: #EDF5E1;
+    background-clip: padding-box;
+    border: 1px solid #05386B;
+    border-radius: 0 !important;
+    outline: 0;
+}
+
+.close {
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #379683 !important;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}

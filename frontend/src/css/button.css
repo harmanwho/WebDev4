@@ -1,0 +1,26 @@
+.btn {
+    border-radius: 0 !important;
+    border: 0.1rem solid !important;
+}
+
+.btn-outline-primary {
+    color: #05386B !important;
+    border-color: #05386B !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #05386B !important;
+    border-color: #05386B !important;
+    color: #EDF5E1 !important;
+}
+
+.btn-outline-success {
+    color: #379683 !important;
+    border-color: #379683 !important;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+    background-color: #379683 !important;
+    border-color: #379683 !important;
+    color: #EDF5E1 !important;
+}

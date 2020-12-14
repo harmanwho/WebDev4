@@ -1,0 +1,39 @@
+.card {
+    background-clip: border-box !important; 
+    border: 0 solid #EDF5E1 !important;
+    border-radius: 0 !important;
+    background-color: #EDF5E1;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #05386B !important;
+    border: 1px solid #05386B;
+    border-radius: 0 !important;
+    color: #EDF5E1;
+}
+
+.card-text {
+    height: 50px;
+}
+
+.card-title .attrgroup{
+    display: inline-block;
+}
+
+.card-date p{
+    display: inline-block;
+}
+
+.map {
+    height: 30px;
+}
+
+.card-icon {
+    margin-top: -5px;
+    margin-right: 5px;
+}
+.card-about {
+    color: #379683;
+}
