@@ -44,6 +44,7 @@ notice, you need client and server runs concurrently in different terminal sessi
 
 ## Client-side usage(PORT: 3000)
 ```terminal
+$ cd frontend // enter the frontend directory
 $ npm i       // npm install pacakges
 $ npm run dev // run it locally
 
@@ -53,7 +54,14 @@ $ npm run start // this will run the files in docs, this behavior is exactly the
 ```
 
 ## Server-side usage(PORT: 3001)
-<!-- 
+```terminal
+$ npm i       // npm install pacakges
+$ npm run dev // run it locally
+
+// run the server-side app
+$ npm run start // this will run the files in docs, this behavior is exactly the same how gh-pages will run your static site
+```
+
 ### Prepare your secret
 
 run the script at the first level:
@@ -64,14 +72,12 @@ run the script at the first level:
 ### Start
 
 ```terminal
-$ cd server   // go to server folder
 $ npm i       // npm install pacakges
 $ npm run dev // run it locally
-$ npm run build // this will build the server code to es5 js codes and generate a dist file
 ```
 
 ## Deploy Server to [Heroku](https://dashboard.heroku.com/)
-<!-- ```terminal
+```terminal
 $ npm i -g heroku
 $ heroku login
 ...
@@ -80,14 +86,8 @@ $ npm run heroku:add <your-super-amazing-heroku-app>
 // remember to run this command in the root level, not the server level, so if you follow the documentation along, you may need to do `cd ..`
 $ pwd
 /newApplication/<your-name>/mern
-$ npm run deploy:heroku -->
+$ npm run deploy:heroku
 
-## After creating heroku
-
-<!-- remember to update the file of [client/webpack.prod.js](https://github.com/amazingandyyy/mern/blob/master/client/webpack.prod.js)
-```javascript
- 'API_URI': JSON.stringify('https://your-super-amazing-heroku-app.herokuapp.com')
-``` -->
 
 ## Class Link:
 https://johnguerra.co/classes/webDevelopment_fall_2020/
@@ -98,11 +98,12 @@ https://johnguerra.co/classes/webDevelopment_fall_2020/
 ## Project Objective:
 Build a Web application using  MongoDB, Express, Node 
 ## Screenshots:
-![](images/calendar.png)
-![](images/crud.png)
-![](images/form.png)
-![](images/table.png)
-
+![Home Screen 1](images/home1.png)
+![Home Screen 1](images/home2.png)
+![Details Screen 1](images/modal1.png)
+![Details Screen 2](images/modal2.png)
+![Sign Up](images/signup.png)
+![Log In](images/login.png)
 
 
 ## Standard
