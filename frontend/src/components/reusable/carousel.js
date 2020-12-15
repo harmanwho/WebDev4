@@ -15,7 +15,7 @@ function CustomCarousel({images, modal}) {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <p>{images.indexOf(image) + 1} / {image.length}</p>
+                    <p>{images.indexOf(image) + 1} / {images.length}</p>
                     </Carousel.Caption>
                 </Carousel.Item> 
             )}
