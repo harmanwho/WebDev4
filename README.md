@@ -87,10 +87,11 @@ $ npm run heroku:add <your-super-amazing-heroku-app>
 $ pwd
 /newApplication/<your-name>/mern
 $ npm run deploy:heroku
-
+```
 
 ## Class Link:
 https://johnguerra.co/classes/webDevelopment_fall_2020/
+
 ## Walk through video:
 
 ## Presentation:
