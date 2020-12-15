@@ -2,8 +2,8 @@ const { MongoClient, ObjectId } = require("mongodb");
 if (process.env.NODE_ENV !== "production") require("dotenv").config();
 function myDB() {
 	const myDB = {};
-	const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_URI}`;
-
+	// const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_URI}`;
+	const uri = "mongodb+srv://$harman:pass@cluster0.zk2xm.mongodb.net/renthouse?retryWrites=true&w=majority";
 	myDB.getAllData = async (sorting) => {
 		const client = new MongoClient(uri);
 		await client.connect();
