@@ -3,21 +3,21 @@ var Strategy = require('passport-local').Strategy;
 const passport = require("passport");
 
 module.exports = function configurePassport (app) {
-    function findByUsername(username) {
-        return username === "harman"
-            ? {username: "harman", password: "password"}
+    function findByEmail(email) {
+        return email === "abc@gmail.com"
+            ? {email: "abc@gmail.com", password: "pass"}
             : null;
     }
     
     // Configure the local strategy for use by Passport.
     //
     // The local strategy require a `verify` function which receives the credentials
-    // (`username` and `password`) submitted by the user.  The function must verify
+    // (`email` and `password`) submitted by the user.  The function must verify
     // that the password is correct and then invoke `cb` with a user object, which
     // will be set at `req.user` in route handlers after authentication.
-    passport.use(new Strategy(async function(username, password, cb) {
-            console.log("Authenticating", username, password);
-            const user = await findByUsername(username);
+    passport.use(new Strategy(async function(email, password, cb) {
+            console.log("Authenticating", email, password);
+            const user = await findByEmail(email);
             try {
                 //If user not found
                 if(!user) {
@@ -39,7 +39,7 @@ module.exports = function configurePassport (app) {
     
             
             //Mongo Function
-            db.users.findByUsername(username, function(err, user) {
+            db.users.findByEmail(email, function(err, user) {
                 if (err) { return cb(err); }
                 if (!user) { return cb(null, false); }
                 if (user.password != password) { return cb(null, false); }

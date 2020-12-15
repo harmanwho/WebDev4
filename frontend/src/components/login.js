@@ -5,7 +5,18 @@ import "../css/signup.css";
 import Button from "../components/reusable/button";
 
 export default function LogIn() {
-  return (
+    const sendLogin = async function (data) {
+        const response = await fetch('/login', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(data)
+        }).then(res => res.json());
+        console.log(response);
+        // if(response.success) {
+        //   alert(response.message);
+        // }
+    }
+    return (
       <div className="container form-container">
         <h1 className="main-heading text-center p-5">Log In to <span className="form-about">RentHouse</span> </h1>
         <Formik
@@ -16,8 +27,8 @@ export default function LogIn() {
             })}
             onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
                     setSubmitting(false);
+                    sendLogin(values);
                 }, 400);
             }}
             >

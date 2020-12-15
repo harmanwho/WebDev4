@@ -5,11 +5,22 @@ import "../css/signup.css";
 import Button from "../components/reusable/button";
 
 export default function SignUp() {
-  return (
+    const sendUser = async function (data) {
+        const response = await fetch('/signup', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(data)
+        }).then(res => res.json());
+        console.log(response);
+        // if(response) {
+        //   alert(response.message);
+        // }
+    }
+    return (
       <div className="container form-container">
         <h1 className="main-heading text-center p-5">Sign Up to <span className="form-about">RentHouse</span> </h1>
         <Formik
-            initialValues={{ firstName: "", lastName: "", email: "" }}
+            initialValues={{ firstName: "", lastName: "", email: "", password:"" }}
             validationSchema={Yup.object({
                 firstName: Yup.string()
                 .max(15, "Must be 15 characters or less")
@@ -23,8 +34,9 @@ export default function SignUp() {
             })}
             onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
                     setSubmitting(false);
+                    delete values.confirmPassword;
+                    sendUser(values);
                 }, 400);
             }}
             >
