@@ -12,6 +12,7 @@ export default function LogIn() {
           body: JSON.stringify(data)
         }).then(res => res.json());
         console.log(response);
+        // Remember to remove code you are no longer using!
         // if(response.success) {
         //   alert(response.message);
         // }
@@ -41,7 +42,7 @@ export default function LogIn() {
                         <div className="col-5">
                             <input id="email" type="email" {...formik.getFieldProps("email")} />
                         </div>
-                        <div className="col-2 error-field">   
+                        <div className="col-2 error-field">
                             {formik.touched.email && formik.errors.email ? (
                                 <div>{formik.errors.email}</div>
                             ) : null}
@@ -55,7 +56,7 @@ export default function LogIn() {
                         <div className="col-5">
                             <input id="password" type="password" {...formik.getFieldProps("password")} />
                         </div>
-                        <div className="col-2 error-field">   
+                        <div className="col-2 error-field">
                             {formik.touched.password && formik.errors.password ? (
                                 <div>{formik.errors.password}</div>
                             ) : null}
@@ -66,13 +67,13 @@ export default function LogIn() {
                         <Button type="success" text="Log In" />
                     </div>
                     <h5 className="main-heading text-center p-2">
-                        Don't have an account?  
+                        Don't have an account?
                         <span className="form-about ml-2">
-                            <a 
+                            <a
                                 className="form-link ml-2"
                                 href="/signup">
                                 Sign Up
-                            </a>   
+                            </a>
                         </span>
                     </h5>
                 </form>
