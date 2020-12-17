@@ -4,6 +4,8 @@ import * as Icon from 'react-bootstrap-icons';
 import COLORS from "../utils/colors";
 import "../css/navbar.css"
 
+//Great use of nav bar to make it easier for the user to navigate
+
 function NavBar({user}) {
     const navBrandStyle = {
         color: COLORS.catalineblue
@@ -15,12 +17,12 @@ function NavBar({user}) {
                     RentHouse
                 </h5>
             </a>
-           
+
             <a className="ml-5" href="/home">
                 <Icon.HouseFill color={COLORS.catalineblue} size={40}/>
             </a>
             <div className='float-right'>
-                {user ? 
+                {user ?
                     (
                         <div>
                             Welcome {user}
@@ -28,20 +30,20 @@ function NavBar({user}) {
                                 <Button type="primary" href="/logout" text="Logout"/>
                             </form>
                         </div>
-                        
+
                     ) : (
                         <>
                             <a href="/signup">
-                                <Button type="success" text="Signup"/> 
+                                <Button type="success" text="Signup"/>
                             </a>
                             <a href="/login">
                                 <Button type="success" href="/login" text="Login"/>
-                            </a>   
+                            </a>
                         </>
                     )
                 }
-                
-                
+
+
             </div>
         </nav>
 	);
