@@ -4,6 +4,7 @@ const Bcrypt = require("bcrypt");
 const passport = require("passport");
 const myDB = require("../db/jobmongodb.js");
 
+//Remember to remove code you are no longer using!
 // router.post(
 //   "/login",
 //   passport.authenticate("local", {
@@ -24,7 +25,7 @@ router.post('/login', async (req, res, next) => {
         if (err) throw res.status(403).send(err);
         if (isValid) {
             // erq.session.logged = true;
-            // request.session._id = result._id;   
+            // request.session._id = result._id;
             res.json({"user": result.firstName});
         }
         else {
