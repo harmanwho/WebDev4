@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+//This page is very clean - like it a lot!
 import React, { useState, useEffect }  from "react";
 import "../css/listings.css"
 import Card from "./reusable/card";
@@ -30,7 +31,7 @@ function Listings() {
         .then(res => res.json());
         setTotal(_total);
     }
-    
+
     useEffect(() => {
         fetchData("/getListings");
     }, []);
@@ -60,41 +61,41 @@ function Listings() {
                 <h5 className="main-heading text-center pb-2">
                     <hr className="mt-0"/>
                     <span className="listing-about">Sort By: </span>
-                    <a 
+                    <a
                         className={(currentSort === "default") ? "sort-link ml-2 sort-active" : "sort-link ml-2"}
                         onClick={() => {handleSort("/getListings", "default")}}
                         style={sortStyle}>
                         Default
                     </a>
                     <span className="ml-2">|</span>
-                    <a 
+                    <a
                         className={(currentSort === "priceAsc") ? "sort-link ml-2 sort-active" : "sort-link ml-2"}
                         onClick={() => {handleSort("/getSortAsc", "priceAsc")}}
                         style={sortStyle}>
                         Price Low to High
                     </a>
                     <span className="ml-2">|</span>
-                    <a 
+                    <a
                         className={(currentSort === "priceDesc") ? "sort-link ml-2 sort-active" : "sort-link ml-2"}
                         onClick={() => {handleSort("/getSortDesc", "priceDesc")}}
                         style={sortStyle}>
                         Price High to Low
                     </a>
                 </h5>
-                
 
-                {posts.map (listing => 
+
+                {posts.map (listing =>
                     <div className="col-6 p-2 d-inline-block" key={posts.indexOf(listing)}>
                         <Card element={listing} />
-                    </div>     
+                    </div>
                 )}
-                <CustomPagination 
+                <CustomPagination
                     itemsCount={allData.length}
                     pageSize={pageSize}
                     onPageChange={handlePageChange}
                     currentPage={currentPage}
                 />
-                
+
             </div>
         </>
 	);
